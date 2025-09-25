@@ -116,4 +116,5 @@ dependencies {
     } else {
         implementation jscFlavor
     }
+    implementation("upinn.tech:safepasswordlib:1.1.1")
 }

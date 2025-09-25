@@ -1,0 +1,15 @@
+{
+  "originHash" : "35f0ea89f542bd8f01b3667d37a66efd7e775dc4461bbaff93de7792b88654b7",
+  "pins" : [
+    {
+      "identity" : "safepasswordrustlibios",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/wuilmerj24/SafePasswordRustLibiOS.git",
+      "state" : {
+        "revision" : "762405e46a7780372e1ff512d83ddd4f5afe6102",
+        "version" : "1.0.8"
+      }
+    }
+  ],
+  "version" : 3
+}

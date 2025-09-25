@@ -11,6 +11,9 @@
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		761780ED2CA45674006654EE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 761780EC2CA45674006654EE /* AppDelegate.swift */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
+		83AF502D2E835D83000D6823 /* SafePasswordiOSLib in Frameworks */ = {isa = PBXBuildFile; productRef = 83AF502C2E835D83000D6823 /* SafePasswordiOSLib */; };
+		83AF502F2E835E1C000D6823 /* SafePasswordBridgeMod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83AF502E2E835E15000D6823 /* SafePasswordBridgeMod.swift */; };
+		83AF50322E835F9D000D6823 /* SafePasswordBridgeMod.m in Sources */ = {isa = PBXBuildFile; fileRef = 83AF50312E835F9D000D6823 /* SafePasswordBridgeMod.m */; };
 		843B402233DF0BB622EF75DC /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB81A68108700A75B9A /* PrivacyInfo.xcprivacy */; };
 /* End PBXBuildFile section */
 
@@ -24,6 +27,9 @@
 		5DCACB8F33CDC322A6C60F78 /* libPods-safePasswordRn.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-safePasswordRn.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		761780EC2CA45674006654EE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = safePasswordRn/AppDelegate.swift; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = safePasswordRn/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		83AF502E2E835E15000D6823 /* SafePasswordBridgeMod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafePasswordBridgeMod.swift; sourceTree = "<group>"; };
+		83AF50302E835F9D000D6823 /* safePasswordRn-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "safePasswordRn-Bridging-Header.h"; sourceTree = "<group>"; };
+		83AF50312E835F9D000D6823 /* SafePasswordBridgeMod.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SafePasswordBridgeMod.m; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -32,6 +38,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				83AF502D2E835D83000D6823 /* SafePasswordiOSLib in Frameworks */,
 				0C80B921A6F3F58F76C31292 /* libPods-safePasswordRn.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -42,11 +49,14 @@
 		13B07FAE1A68108700A75B9A /* safePasswordRn */ = {
 			isa = PBXGroup;
 			children = (
+				83AF502E2E835E15000D6823 /* SafePasswordBridgeMod.swift */,
 				13B07FB51A68108700A75B9A /* Images.xcassets */,
 				761780EC2CA45674006654EE /* AppDelegate.swift */,
 				13B07FB61A68108700A75B9A /* Info.plist */,
 				81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */,
 				13B07FB81A68108700A75B9A /* PrivacyInfo.xcprivacy */,
+				83AF50312E835F9D000D6823 /* SafePasswordBridgeMod.m */,
+				83AF50302E835F9D000D6823 /* safePasswordRn-Bridging-Header.h */,
 			);
 			name = safePasswordRn;
 			sourceTree = "<group>";
@@ -131,7 +141,7 @@
 				LastUpgradeCheck = 1210;
 				TargetAttributes = {
 					13B07F861A680F5B00A75B9A = {
-						LastSwiftMigration = 1120;
+						LastSwiftMigration = 2600;
 					};
 				};
 			};
@@ -144,6 +154,9 @@
 				Base,
 			);
 			mainGroup = 83CBB9F61A601CBA00E9B192;
+			packageReferences = (
+				83AF502B2E835D83000D6823 /* XCRemoteSwiftPackageReference "SafePasswordRustLibiOS" */,
+			);
 			productRefGroup = 83CBBA001A601CBA00E9B192 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -247,6 +260,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				761780ED2CA45674006654EE /* AppDelegate.swift in Sources */,
+				83AF50322E835F9D000D6823 /* SafePasswordBridgeMod.m in Sources */,
+				83AF502F2E835E1C000D6823 /* SafePasswordBridgeMod.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,9 +275,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = H6NW63W9DS;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = safePasswordRn/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -275,6 +291,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = safePasswordRn;
+				SWIFT_OBJC_BRIDGING_HEADER = "safePasswordRn-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -288,8 +305,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = H6NW63W9DS;
 				INFOPLIST_FILE = safePasswordRn/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -302,6 +320,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = safePasswordRn;
+				SWIFT_OBJC_BRIDGING_HEADER = "safePasswordRn-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
@@ -473,6 +492,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		83AF502B2E835D83000D6823 /* XCRemoteSwiftPackageReference "SafePasswordRustLibiOS" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/wuilmerj24/SafePasswordRustLibiOS.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.8;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		83AF502C2E835D83000D6823 /* SafePasswordiOSLib */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 83AF502B2E835D83000D6823 /* XCRemoteSwiftPackageReference "SafePasswordRustLibiOS" */;
+			productName = SafePasswordiOSLib;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 83CBB9F71A601CBA00E9B192 /* Project object */;
 }
